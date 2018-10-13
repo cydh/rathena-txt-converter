@@ -1,4 +1,14 @@
 <?php
+/**
+ * To convert pet_db.txt to JSON formatted file with .yml file
+ * extension.
+ *
+ * PHP version 5.2.0+
+ *
+ * LICENSE: See LICENSE in root folder
+ *
+ * @author     Cydh
+ */
 require_once 'petdbconfig.php';
 
 foreach ($db as $mode => $thisdb) {

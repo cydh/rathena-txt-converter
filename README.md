@@ -5,6 +5,6 @@ Convert [rAthena](https://github.com/rathena/rathena) TXT DB Files to YAML (.yml
 
 So don't worry, YAML parser can read JSON file, read more about YAML [here](http://yaml.org/).
 
-To use YAML converter (optional, you can use JSON), you need [composer](https://getcomposer.org/download/) installed (PHP 5.3.2+ required)
+To use YAML converter (optional, you can use JSON), you need [composer](https://getcomposer.org/download/) installed (PHP 7.1.3+ required)
 
     composer install

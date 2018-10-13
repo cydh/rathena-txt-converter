@@ -1,4 +1,13 @@
 <?php
+/**
+ * To convert pet_db.txt to YAML file
+ *
+ * PHP version 7.1.3+
+ *
+ * LICENSE: See LICENSE in root folder
+ *
+ * @author     Cydh
+ */
 require_once 'petdbconfig.php';
 require_once '../vendor/autoload.php';
 

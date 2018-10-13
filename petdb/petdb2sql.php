@@ -1,4 +1,13 @@
 <?php
+/**
+ * To convert pet_db.txt to SQL queries
+ *
+ * PHP version 5.2.0+
+ *
+ * LICENSE: See LICENSE in root folder
+ *
+ * @author     Cydh
+ */
 require_once 'petdbconfig.php';
 $table_name = "pet_db";
 

@@ -13,11 +13,15 @@
  *
  * PHP version 5
  *
- * LICENSE: Unlicensed
+ * LICENSE: See LICENSE in root folder
  *
  * @author     Cydh
  */
 
+/**
+ * Replace the path to your local: "path/to/rathena/db/"
+ * Example: "D:/rathena/db/"
+ */
 $root = "https://raw.githubusercontent.com/rathena/rathena/master/db/";
 $outRoot = "../";
 
