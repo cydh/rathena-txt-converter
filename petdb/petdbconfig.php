@@ -47,6 +47,29 @@ $dbpath['pre'] = array(
     ),
 );
 
+$table_name = "pet_db";
+
+$opts = "";
+$opts .= "i::";
+$opts .= "o::";
+$opts .= "t::";
+$args = getopt($opts);
+
+if (count($args) > 0) {
+    unset($dbpath["pre"]);
+    if (isset($args["i"])) {
+        $dbpath["re"]["files"]["db"] = $args["i"];
+    }
+    if (isset($args["o"])) {
+        $dbpath["re"]["output"]["yml"] = $args["o"];
+        $dbpath["re"]["output"]["json"] = $args["o"];
+        $dbpath["re"]["output"]["sql"] = $args["o"];
+    }
+    if (isset($args["t"])) {
+        $table_name = $args["t"];
+    }
+}
+
 $db = array();
 
 function parseDB(&$thisdb, $filepath) {

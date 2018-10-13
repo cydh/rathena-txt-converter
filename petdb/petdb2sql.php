@@ -2,6 +2,14 @@
 /**
  * To convert pet_db.txt to SQL queries
  *
+ * Usage by default will use input and out in petdb2config.php
+ * or by passing the arguments:
+ * -i="path/to/rathena/re_or_pre/pet_db.txt" => input file
+ * -o="filename"                             => output file
+ * -t="table_name"                           => table name
+ * Example:
+ * php petdb2sql.php -i="D:/rathena/re/pet_db.txt" -o="pet_db.sql" -t="pet_db"
+ *
  * PHP version 5.2.0+
  *
  * LICENSE: See LICENSE in root folder
@@ -9,7 +17,6 @@
  * @author     Cydh
  */
 require_once 'petdbconfig.php';
-$table_name = "pet_db";
 
 foreach ($db as $mode => $thisdb) {
     $fp = fopen($thisdb['output']['sql'], "w+");
